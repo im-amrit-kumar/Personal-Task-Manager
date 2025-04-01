@@ -62,6 +62,7 @@ Usage Example:
 
 Add Task:
 Enter a unique Task ID, Title, Category, and Priority (from 0 to 10).
+
 Example: Task 1: "Complete Homework", Category: "Studies", Priority: 5
 
 Mark Task as Completed:
