@@ -80,28 +80,45 @@ Exit the program and clear all tasks.
 Code Walkthrough
 
 Task Structure
+
 Each task is stored as a Task Node with the following attributes:
+
 id: Unique identifier for each task.
+
 title: Name or title of the task.
+
 category: Category the task belongs to (e.g., "Work", "Study").
+
 completed: Boolean value to track whether the task is completed or pending.
+
 next: Pointer to the next task (used for the linked list).
 
 
 TaskList Class
+
 The TaskList class contains the following functions:
+
 addTask: Adds a new task to the task list, hash map, and priority queue.
+
 displayTasks: Displays all tasks in the linked list.
+
 completeTask: Marks a task as completed by its ID.
+
 undoTask: Removes the most recently added task (undo operation).
+
 showUrgentTask: Displays the task with the highest priority.
+
 clearAllTasks: Clears all tasks when the program exits.
 
 Input Validation
+
 The program includes input validation to ensure that users enter valid data (e.g., task ID should be a number, priority should be between 0 and 10).
+
 Invalid inputs are handled gracefully, with appropriate error messages displayed.
 
+
 User Interface
+
 The user interacts with the program through a simple text-based menu. After choosing an option, users can add tasks, view tasks, complete tasks, and more. The interface is designed to be intuitive and user-friendly.
 
 
@@ -109,36 +126,67 @@ Example Output
 
 
 ============================
+
 📋  PERSONAL TASK MANAGER
+
 ============================
+
 1️⃣  Add Task
+
 2️⃣  Display Tasks
+
 3️⃣  Mark Task as Completed
+
 4️⃣  Undo Last Task
+
 5️⃣  Show Urgent Task
+
 6️⃣  Exit
+
 ============================
+
 Enter choice: 1
 
+
 🔹 Enter Task ID: 1
+
 🔹 Enter Task Title: Complete Homework
+
 🔹 Enter Category: Studies
+
 🔹 Enter Priority (0-10): 5
+
 ✅ Task Added Successfully: Complete Homework (Priority: 5)
 
+
 ============================
+
 📋  PERSONAL TASK MANAGER
+
 ============================
+
 1️⃣  Add Task
+
 2️⃣  Display Tasks
+
 3️⃣  Mark Task as Completed
+
 4️⃣  Undo Last Task
+
 5️⃣  Show Urgent Task
+
 6️⃣  Exit
+
 ============================
+
 Enter choice: 2
 
+
+
 📌 Task List:
+
 ------------------------------------------
+
 🔹 [1] Complete Homework (Category: Studies) ⏳ [Pending]
+
 ------------------------------------------
